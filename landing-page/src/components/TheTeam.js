@@ -15,29 +15,22 @@ export class TheTeam extends Component {
                 <Container>
                     <Row>
                         <h2 className='section-title'>Team Access</h2>
-                        <br/>
-                        <br/>
-                        <br/>
                     </Row>
                     <Row>
                         <Col>
                             <img src={mariam} alt="Mariam Khan"/>
-                            <br/>
                             <p>Mariam Khan - UI/UX Designer</p>
                         </Col>
                         <Col>
                             <img src={swaleha} alt="Swaleha Masude"/>
-                            <br/>
                             <p>Swaleha Masude - Visual Designer + Software Engineer</p>
                         </Col>
                         <Col>
                             <img src={michelle} alt="Michelle Pham"/>
-                            <br/>
                             <p>Michelle Pham - Software Engineer</p>
                         </Col>
                         <Col>
                             <img src={jenny} alt="Jenny Sun"/>
-                            <br/>
                             <p>Jenny Sun - Project Management + Research</p>
                         </Col>
                     </Row>

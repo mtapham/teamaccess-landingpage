@@ -1,22 +1,24 @@
-import React, { Component } from 'react'; //import React Component
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
+import React, {Component} from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import ischool from '../img/ischool.png';
 
 export class Footer extends Component {
     render() {
         return(
-            <footer>
+            <div className='footer'>
                 <Container>
                     <Row>
-                        <h3 className='title'>Team Access</h3>
-                    </Row>
-                    <Row>
-                        <h4 className='title'>Links</h4>
+                        <Col>
+                            <img src={ischool} alt="information school logo"/>
+                        </Col>
+                        <Col>
+                            <p>Copyright &copy; 2022 CONNEC<span class="underline">TA</span></p>
+                        </Col>
                     </Row>
                 </Container>
-            </footer>
+            </div>
         );
     }
 }

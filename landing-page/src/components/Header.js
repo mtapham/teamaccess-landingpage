@@ -23,9 +23,7 @@ export class App extends Component {
                 <Row>
                     <h1 className="title">CONNEC<span class="underline">TA</span></h1>
                     <p>A workshop to equip teaching assistants with training tools to foster belonging and inclusion in the classroom.</p>
-                    <Button className="btn" variant="outline-primary" onClick={(e) => { e.preventDefault(); window.location.href='http://google.com';}}>
-                      Enter CONNECTA
-                    </Button>
+                    <button class="button-74" role="button" onClick={(e) => { e.preventDefault(); window.location.href='http://google.com';}}>Enter CONNECTA</button>
                 </Row>
               </Col>
               <Col>
