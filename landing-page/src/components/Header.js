@@ -5,28 +5,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-
 import logo from '../img/connecta-logo.png';
-import browser from '../img/workshop-preview.png';
+import browser from '../img/browser.png';
 
 export class App extends Component {
   render() {
     return (
-        <header className="app-header">
+        <div className="app-header">
           <Container>
             <Row>
-              <Col>
+              <Col lg={6}>
                 <Row>
                     <img className="logo" src={logo} alt="ConnecTA Logo"/>
                 </Row>
-                <Row>
+                <Row className="description">
                     <h1 className="title">CONNEC<span class="underline">TA</span></h1>
                     <p>A workshop to equip teaching assistants with training tools to foster belonging and inclusion in the classroom.</p>
                     <button class="button-74" role="button" onClick={(e) => { e.preventDefault(); window.location.href='http://google.com';}}>Enter CONNECTA</button>
                 </Row>
               </Col>
-              <Col>
+              <Col lg={6}>
                 <img className="browser" src={browser} alt="workshop preview"/>
               </Col>
             </Row>
@@ -49,7 +47,7 @@ export class App extends Component {
 
             </Row>
           </Container>
-        </header>
+        </div>
     );
   }
 }

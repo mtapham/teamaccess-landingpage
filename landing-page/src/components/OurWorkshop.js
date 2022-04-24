@@ -16,15 +16,15 @@ export class OurWorkshop extends Component {
                         <h2 className='section-title'>Our Workshop</h2>
                     </Row>
                     <Row>
-                        <Col className='reflection'>
+                        <Col md={4} className='reflection'>
                             <img src={reflection} alt="cartoon character looking in the mirror"/>
                             <p>Self awareness and Reflection</p>
                         </Col>
-                        <Col className='resources'>
+                        <Col md={4} className='resources'>
                             <img src={resources} alt="cartoon character surrounded by tools"/>
                             <p>Skills and Resources</p>
                         </Col>
-                        <Col className='implementation'>
+                        <Col md={4} className='implementation'>
                             <img src={implementation} alt="cartoon character holding a pencil"/>
                             <p>Implementation and Practice</p>
                         </Col>

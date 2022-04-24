@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 export class ProjectStatus extends Component {
     render() {
@@ -9,10 +8,9 @@ export class ProjectStatus extends Component {
             <div className='project-status'>
                 <Container>
                     <Row>
-                        <Col/>
-                        <Col>
-                            <h2 className='title'>Project Status</h2>
-                        </Col>
+                        <h2 className='section-title'>Project Status</h2>
+                        <p>University of Washington Information School Capstone project for Winter/Spring 2022</p>
+                        <p>Development may continue through following capstone groups.</p>
                     </Row>
                 </Container>
             </div>

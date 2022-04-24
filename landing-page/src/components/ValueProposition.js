@@ -9,8 +9,8 @@ export class ValueProposition extends Component {
             <div className='value-proposition'>
                 <Container>
                     <Row>
-                        <Col xs={4}/>
-                        <Col xs={8} className='proposition'>
+                        <Col lg={4}/>
+                        <Col lg={8} className='proposition'>
                             <h2 className='section-title'>Value Proposition</h2>
                             <p>
                                 Women of color students are a marginalized identity

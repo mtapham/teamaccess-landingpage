@@ -9,7 +9,7 @@ export class ProblemStatement extends Component {
             <div className='problem-overview'>
                 <Container>
                     <Row>
-                        <Col className="overview" xs={8}>
+                        <Col className="overview" md={7} lg={8}>
                             <h2 className='section-title'>Problem Overview</h2>
                             <p>
                                 Women of color students are a marginalized identity
@@ -20,8 +20,8 @@ export class ProblemStatement extends Component {
                                 to help students strive in pursuing the tech field.
                             </p>
                         </Col>
-                        <Col xs={1}/>
-                        <Col className="stats" xs={3}>
+                        <Col className="stats" md={5} lg={4}>
+                            <h2 className='section-title'>Did you know?</h2>
                             <h2 className='stat-title'>&lt; 5%</h2>
                             <p className='stat-detail'>insert statistic here</p>
                         </Col>

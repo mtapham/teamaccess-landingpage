@@ -1,3 +1,4 @@
+/* Font Import */
 @font-face {
   font-family: "Rockwell";
   src: local("Rockwell"),
@@ -5,133 +6,155 @@
   font-weight: normal;
   }
 
+/* General */
 * {
   font-family: 'Lato', Arial, sans-serif;
 }
 
 p {
-  font-size: 19px;
-}
-
-.app {
-  background-image: url('./img/background-final.png');
-  width: 100%;
-  height: 75%;
-  background-size: 100% 250em;
-}
-
-.app-header, .problem-overview, .value-proposition, .our-workshop, .how-it-works, .the-team, .enter-connecta {
-  padding: 0em 10em;
-}
-
-.app-header { 
-  padding-top: 8em;
-}
-
-
-.app-header .logo {
-  width: 10em;
-  transform: rotate(20deg);
-  padding-bottom: 3em;
-}
-
-.app-header button {
-  display:block;
-  text-align: left;
-  width: 50%;
-  text-align: center;
-}
-.title {
-  font-weight: bold;
-  letter-spacing: .2em;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.app-header .browser {
-  width: 30em;
-  display: block;
-  margin: 0 auto;
-}
-
-.problem-overview {
-  padding-top: 9em;
+  font-size: 1em;
 }
 
 .section-title {
-  font-size: 2.3em;
+  font-size: 2em;
 }
 
 .section-title, .problem-overview .stat-title {
   font-family: 'Rockwell';
 }
 
+/* App Header */
+.app-header { 
+  padding: 4.5em 0em;
+}
+
+.app-header .logo {
+  width: 10em;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  transform: rotate(20deg);
+}
+
+.app-header .description {
+  justify-content: center;
+}
+
+.app-header .title {
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: .15em;
+}
+
+.app-header .title .underline {
+  text-decoration: underline;
+}
+
+.app-header .title, .app-header p {
+  text-align: center;
+}
+
+.app-header button {
+  display:block;
+  width: 50%;
+  text-align: center;
+}
+
+.app-header .browser {
+  display: none; 
+  margin: 0 auto;
+}
+
+/* Problem Overview */
+.problem-overview {
+  background-color: #DAE1E4;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.problem-overview .stats {
+  margin: 1em 0em;
+}
+
 .problem-overview .stat-title {
   font-size: 4em;
 }
 
-.problem-overview .stat-title, .problem-overview .stat-detail, .value-proposition .proposition {
-  text-align: right;
-}
-
 .value-proposition {
-  padding-top: 14em;
+  background-color: #F5F1F1;
+  padding: 3em 1em;
+  text-align: center;
 }
 
-.our-workshop {
-  padding-top: 11em;
+/* Our Workshops */
+
+.our-workshop, .how-it-works {
+  padding: 5em 0em;
 }
 
-.our-workshop h2, .our-workshop p, .the-team h2 {
+.our-workshop h2 {
+  text-align: center;
+}
+
+.our-workshop p {
+  margin-top: .5em;
   text-align: center;
 }
 
 .our-workshop img {
-  width: 17em;
+  width: 50%;
   display: block;
-  margin: 0 auto;
+  margin: 2em auto 0 auto;
 }
 
+/* How It Works */
 .how-it-works {
-  padding-top: 6em;
+  background-color: #DAE1E4;
+  padding: 3em 0em;
+  text-align: center;
 }
 
 .how-it-works h2 {
-  text-align: center;
+  padding: .25em 0em;
+}
+.how-it-works .card {
+  width: 15em;
+  margin: .5em auto;
 }
 
-.how-it-works img {
-  padding-top: 1em;
-  width: 40em;
-  margin: 0 auto;
-}
-
-.how-it-works p {
-  padding-top: 1em;
-  text-align: center;
-}
-
+/* Team Access */
 .the-team {
-  padding-top: 3em;
+  margin: 3em 0em;
+}
+
+.the-team h2 {
+  text-align: center;
 }
 
 .the-team img {
-  padding-top: 1em;
-  width: 19em;
+  width: 15em;
   display: block;
-  margin: 0 auto;
+  margin: 2em auto 0 auto;
 }
 
 .the-team p {
-  font-size: 16px;
+  font-size: 14px;
   color: grey;
   text-align: center;
 }
 
-.divider {
-  margin: 5em 0em;
+/* Project Status*/
+.project-status {
+  padding: 5em 4em;
+  background-color: #F5F1F1;
+}
+
+.project-status h2, .project-status p {
+  text-align: center;
+}
+
+/* Website Link */
+.enter-connecta {
+  padding: 5em 0em;
 }
 
 .enter-connecta h2 {
@@ -139,28 +162,14 @@ p {
 }
 
 .enter-connecta button {
-  width:30%;
+  width:70%;
   display: block;
-  margin: 0 auto;
-  margin-top: 1em;
+  margin: 1em auto;
 }
 
-.footer {
-  margin-top: 10em;
-  background-color: #C4C4C4;
-  height:5em;
-}
-.footer img, .footer p {
-  margin-top: 1em;
-}
-
-.footer img {
-  width: 14em;
-}
-
+/* Footer */
 .footer p {
-  text-align: right;
-  color: white;
+  text-align: center;
 }
 
 /* Mouse animation */
@@ -370,8 +379,181 @@ p {
 }
 
 @media (min-width: 768px) {
-  .button-74 {
-    min-width: 120px;
-    padding: 0 25px;
+  .app-header {
+    padding: 5em 11em;
   }
+
+  .app-header .logo {
+    width: 13em;
+    margin: 0 auto;
+    transform: rotate(20deg);
+  }
+
+  .app-header .description {
+    justify-content: center;
+  }
+
+  .app-header .title, .app-header p {
+    text-align: center;
+  }
+
+  .app-header button {
+    width: 70%;
+  }
+
+  /* Problem Overview */
+  .problem-overview {
+    padding: 5em 4em;
+  }
+  
+  .problem-overview .overview {
+    text-align: left;
+  }
+
+  .problem-overview .stats {
+    text-align: right;
+  }
+
+  .problem-overview .stats {
+    margin: 0 0;
+  }
+
+  .problem-overview .stat-title {
+    font-size: 3.5em;
+  }
+
+  /* Value Proposition */
+  .value-proposition {
+    padding: 4em 4em;
+    text-align: right;
+  }
+  
+  /* Our Workshops */
+  .our-workshop {
+    padding: 3em 3em;
+  }
+
+  .our-workshop h2 {
+    text-align: center;
+  }
+
+  .our-workshop img {
+    width: 14em;
+    margin: 0 auto;
+  }
+
+  /* How It Works */
+  .how-it-works {
+    padding: 3em 10em;
+  }
+
+  .how-it-works .card {
+    width: 12em;
+    height: 8em;
+  }
+
+  /* Team Access */
+  .the-team {
+    padding: 0em 7em;
+  }
+
+  .the-team h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .the-team img {
+    width: 14em;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Project Status*/
+  .project-status {
+    padding: 4em 7em;
+  }
+  
+  /* Website Link */
+  .enter-connecta button {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 1.20em;
+  }
+  
+  .section-title {
+    font-size: 2.25em;
+  }
+
+  .app-header {
+    padding: 8em 9em;
+  }
+
+  .app-header .logo {
+    width: 11em;
+    margin: 0 0;
+    transform: rotate(20deg);
+  }
+
+  .app-header .description {
+    justify-content: left;
+  }
+
+  .app-header .title, .app-header p {
+    text-align: left;
+  }
+  .app-header .browser {
+    display: block;
+    width: 33em; 
+  } 
+
+  /* Problem Overview */
+  .problem-overview {
+    background-color: white;
+    background-image: url('./img/problemstatement-background.png');
+    background-size: cover;
+    padding: 16em 9em;
+    height: 42em;
+  }
+
+  /* Value Proposition */
+  .value-proposition {
+    background-color: white;
+    background-image: url('./img/valueproposition-background.png');
+    background-size: cover;
+    padding: 13em 9em;
+    height: 38em;
+  }
+  /* Our Workshops */
+  .our-workshop {
+    padding: 0em 12em;
+    margin-bottom: 3em;
+  }
+
+  .our-workshop img {
+    width: 17em;
+  }
+
+  /* How it Works */
+  
+  .how-it-works {
+    padding: 4em 15em;
+  }
+
+  /* Team Access */
+  .the-team img {
+    width: 17em;
+  }
+
+  .enter-connecta button {
+    width: 35%;
+  }
+
+  .project-status {
+    padding: 5em 7em;
+  }
+  
 }

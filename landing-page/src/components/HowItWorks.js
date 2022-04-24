@@ -1,21 +1,42 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import howitworks from '../img/howitworks.png';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
 export class HowItWorks extends Component {
     render() {
         return(
             <div className='how-it-works'>
-                <Container>
-                    <Row>
-                        <h2 className='section-title'>How CONNEC<span class="underline">TA</span> Works</h2>
-                    </Row>
-                    <Row>
-                        <img src={howitworks} alt="CONNECTA User Story"/>
-                        <p>A simplified user story for teaching assistants interacting with CONNECTA</p>
-                    </Row>
-                </Container>
+                <div className='contents'>
+                    <Container>
+                        <Row>
+                            <h2 className='section-title'>How CONNECTA Works</h2>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Card border="light">
+                                    <Card.Body>Faculty connects teaching assistants with CONNEC<span class="underline">TA</span></Card.Body>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card border="light">
+                                    <Card.Body>Complete 1-hour modules over three days</Card.Body>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card border="light">
+                                    <Card.Body>Implement new skills and resources in teaching style/curriculum</Card.Body>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card border="light">
+                                    <Card.Body>Feel prepare in your role and positively impact the experience of your students</Card.Body>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
             </div>
         );
     }
