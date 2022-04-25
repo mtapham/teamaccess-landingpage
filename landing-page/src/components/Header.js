@@ -14,7 +14,7 @@ export class App extends Component {
         <div className="app-header">
           <Container>
             <Row>
-              <Col lg={6}>
+              <Col lg={5}>
                 <Row>
                     <img className="logo" src={logo} alt="ConnecTA Logo"/>
                 </Row>
@@ -24,7 +24,8 @@ export class App extends Component {
                     <button class="button-74" role="button" onClick={(e) => { e.preventDefault(); window.location.href='http://google.com';}}>Enter CONNECTA</button>
                 </Row>
               </Col>
-              <Col lg={6}>
+              <Col lg={1}/>
+              <Col lg={5}>
                 <img className="browser" src={browser} alt="workshop preview"/>
               </Col>
             </Row>

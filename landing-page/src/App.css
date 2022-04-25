@@ -109,16 +109,20 @@ p {
 /* How It Works */
 .how-it-works {
   background-color: #DAE1E4;
-  padding: 3em 0em;
   text-align: center;
 }
 
 .how-it-works h2 {
   padding: .25em 0em;
 }
+
 .how-it-works .card {
-  width: 15em;
-  margin: .5em auto;
+  height: 10em;
+  width: 10em;
+  margin: 0em 0em;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 /* Team Access */
@@ -443,13 +447,15 @@ p {
   }
 
   /* How It Works */
-  .how-it-works {
-    padding: 3em 10em;
+  .how-it-works .card {
+    height: 14em;
+    width: 14em;
+    margin: 1em auto;
   }
 
-  .how-it-works .card {
-    width: 12em;
-    height: 8em;
+  .how-it-works .card-body {
+    padding: 2em 1em;
+    font-size: 20px;
   }
 
   /* Team Access */
@@ -481,7 +487,7 @@ p {
 
 @media (min-width: 992px) {
   p {
-    font-size: 1.20em;
+    font-size: 1.0em;
   }
   
   .section-title {
@@ -489,11 +495,13 @@ p {
   }
 
   .app-header {
-    padding: 8em 9em;
+    padding: 3em 9em;
+    padding-top: 5em;
   }
 
+
   .app-header .logo {
-    width: 11em;
+    width: 10em;
     margin: 0 0;
     transform: rotate(20deg);
   }
@@ -507,30 +515,52 @@ p {
   }
   .app-header .browser {
     display: block;
-    width: 33em; 
+    width: 100%;
+    height: auto; 
   } 
 
   /* Problem Overview */
   .problem-overview {
-    background-color: white;
+    background-color: transparent;
     background-image: url('./img/problemstatement-background.png');
     background-size: cover;
-    padding: 16em 9em;
-    height: 42em;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    padding: 0em 7em;
+    margin-top: -10em;
+  }
+
+  .problem-overview .overview, .problem-overview .stats {
+    margin: 16em 0em;
   }
 
   /* Value Proposition */
   .value-proposition {
-    background-color: white;
+    background-color: transparent;
     background-image: url('./img/valueproposition-background.png');
     background-size: cover;
-    padding: 13em 9em;
-    height: 38em;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+    padding: 0em 7em;
+    top: -24em;
+    margin-bottom: -22em;
   }
+
+  .value-proposition .proposition {
+    margin: 12em 0em;
+    margin-top: 25em;
+
+  }
+
   /* Our Workshops */
   .our-workshop {
-    padding: 0em 12em;
+    padding: 0em 5em;
     margin-bottom: 3em;
+    top: -30em;
   }
 
   .our-workshop img {
@@ -540,7 +570,19 @@ p {
   /* How it Works */
   
   .how-it-works {
-    padding: 4em 15em;
+    background-color: transparent;
+    background-image: url('./img/howitworks-background.png');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+    padding: 6em 10em;
+    text-align: left;
+  }
+
+  .how-it-works .section-title {
+    margin-bottom: 1.0em;
   }
 
   /* Team Access */
