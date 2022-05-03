@@ -502,17 +502,10 @@ p {
 
   .app-header .logo {
     width: 10em;
-    margin: 0 0;
+    margin: 0 auto;
     transform: rotate(20deg);
   }
 
-  .app-header .description {
-    justify-content: left;
-  }
-
-  .app-header .title, .app-header p {
-    text-align: left;
-  }
   .app-header .browser {
     display: block;
     width: 100%;
@@ -546,14 +539,18 @@ p {
     position: relative;
     z-index: -1;
     padding: 0em 7em;
-    top: -24em;
-    margin-bottom: -22em;
+    top: -22em;
+    margin-bottom: -20em;
   }
 
   .value-proposition .proposition {
-    margin: 12em 0em;
-    margin-top: 25em;
+    margin: 4em 0em;
+    margin-top: 23em;
+  }
 
+  .value-proposition .value-proposition-img {
+    margin: 4em 0em;
+    margin-top: 18em;
   }
 
   /* Our Workshops */
@@ -564,7 +561,9 @@ p {
   }
 
   .our-workshop img {
-    width: 17em;
+    width: 18em;
+    height: 15em;
+    object-fit: cover;
   }
 
   /* How it Works */

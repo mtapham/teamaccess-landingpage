@@ -14,20 +14,18 @@ export class App extends Component {
         <div className="app-header">
           <Container>
             <Row>
-              <Col lg={5}>
+            <Col lg={3}/>
+              <Col lg={6}>
                 <Row>
                     <img className="logo" src={logo} alt="ConnecTA Logo"/>
                 </Row>
                 <Row className="description">
                     <h1 className="title">CONNEC<span class="underline">TA</span></h1>
                     <p>A workshop to equip teaching assistants with training tools to foster belonging and inclusion in the classroom.</p>
-                    <button class="button-74" role="button" onClick={(e) => { e.preventDefault(); window.location.href='http://google.com';}}>Enter CONNECTA</button>
+                    <button class="button-74" role="button" onClick={(e) => { e.preventDefault(); window.open('https://connecta-access-it.web.app/', '_blank');}}>Enter CONNECTA</button>
                 </Row>
               </Col>
-              <Col lg={1}/>
-              <Col lg={5}>
-                <img className="browser" src={browser} alt="workshop preview"/>
-              </Col>
+              <Col lg={3}/>
             </Row>
             <Row>
             {/* Code Credit to Yurij Rightblog.ru*/}

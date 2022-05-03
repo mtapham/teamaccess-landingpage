@@ -11,7 +11,7 @@ export class EnterWebsite extends Component {
                         <h2 className='section-title'>Prepare for Impact</h2>
                     </Row>
                     <Row>
-                        <button class="button-74" role="button" onClick={(e) => { e.preventDefault(); window.location.href='http://google.com';}}>Try CONNECTA Today</button>
+                        <button class="button-74" role="button" onClick={(e) => { e.preventDefault(); window.open('https://connecta-access-it.web.app/', '_blank');}}>Try CONNECTA Today</button>
                     </Row>
                 </Container>
             </div>

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import valueproposition from '../img/value-proposition.png';
 
 export class ValueProposition extends Component {
     render() {
@@ -9,16 +10,16 @@ export class ValueProposition extends Component {
             <div className='value-proposition'>
                 <Container>
                     <Row>
-                        <Col lg={4}/>
+                        <Col lg={4}>
+                            <img className="value-proposition-img" src={valueproposition} alt="mascot climbing up stairs to lightbulb" />
+                        </Col>
                         <Col lg={8} className='proposition'>
                             <h2 className='section-title'>Value Proposition</h2>
                             <p>
-                                Women of color students are a marginalized identity
-                                within the field of STEM spaces. In understanding
-                                how we can better support WOC students in educational
-                                settings, we can turn to teaching assistants. TAs play 
-                                a direct, vital role in providing encouragement and empowerment
-                                to help students strive in pursuing the tech field.
+                                CONNECTA will supplement teaching assistants with the
+                                necessary training and resources needed to provide the
+                                best experience for their students. Our workshop will
+                                influence the approaches, teaching styles, and understandings of teaching assistants.
                             </p>
                         </Col>
                     </Row>
