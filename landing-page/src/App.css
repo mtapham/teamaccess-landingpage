@@ -85,6 +85,11 @@ p {
   text-align: center;
 }
 
+.value-proposition .value-proposition-img {
+  width: 21em;
+  
+}
+
 /* Our Workshops */
 
 .our-workshop, .how-it-works {
@@ -382,6 +387,10 @@ p {
   transform: translate(2px, 2px);
 }
 
+.the-team img:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .app-header {
     padding: 5em 11em;
@@ -550,7 +559,8 @@ p {
 
   .value-proposition .value-proposition-img {
     margin: 4em 0em;
-    margin-top: 18em;
+    margin-top: 16em;
+    
   }
 
   /* Our Workshops */

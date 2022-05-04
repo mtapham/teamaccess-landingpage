@@ -10,9 +10,10 @@ export class ValueProposition extends Component {
             <div className='value-proposition'>
                 <Container>
                     <Row>
-                        <Col lg={4}>
+                        <Col lg={3}>
                             <img className="value-proposition-img" src={valueproposition} alt="mascot climbing up stairs to lightbulb" />
                         </Col>
+                        <Col lg={1}/>
                         <Col lg={8} className='proposition'>
                             <h2 className='section-title'>Value Proposition</h2>
                             <p>
